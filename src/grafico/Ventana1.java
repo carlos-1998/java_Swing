@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 public class Ventana1 extends JFrame{
     
     JButton button,btn2,btn3;
-    JLabel jLabel,jLabe2;
+    JLabel jLabel,jLabe2,jLabel3;
     JPanel jPanel;
     public Ventana1() {
         button = new JButton();
@@ -28,6 +28,7 @@ public class Ventana1 extends JFrame{
         btn2 = new JButton();
         btn3 = new JButton();
         jLabe2 = new JLabel();
+        jLabel3 = new JLabel();
         
         this.add(jPanel);
         jPanel.add(jLabel);
@@ -35,10 +36,12 @@ public class Ventana1 extends JFrame{
         jPanel.add(btn2);
         jPanel.add(btn3);
         jPanel.add(jLabe2);
+        jPanel.add(jLabel3);
         
         
         jLabel.setText("Hola");
         jLabe2.setText("Hola2");
+        jLabel3.setText("Hola3");
         button.setText("Saludar");
         btn2.setText("Saludar2");
         btn3.setText("saludar3");
