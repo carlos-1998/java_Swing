@@ -18,21 +18,31 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 public class Ventana1 extends JFrame{
     
-    JButton button;
+    JButton button,btn2;
     JLabel jLabel;
     JPanel jPanel;
     public Ventana1() {
         button = new JButton();
         jLabel = new JLabel();
         jPanel = new JPanel();
+        btn2 = new JButton();
         
         this.add(jPanel);
         jPanel.add(jLabel);
         jPanel.add(button);
+        jPanel.add(btn2);
+        
         
         jLabel.setText("Hola");
         button.setText("Saludar");
+        btn2.setText("Saludar2");
         
+        btn2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Hola2");
+            }
+        });
         
         button.addActionListener(new ActionListener() {
             @Override
