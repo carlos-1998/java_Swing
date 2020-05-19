@@ -34,7 +34,8 @@ public class Ventana1 extends JFrame{
         this.add(jPanel);
         jPanel.add(jLabel);
         jPanel.add(button);
-   
+        jPanel.add(btn2);
+        jPanel.add(btn3);
         jPanel.add(jLabe2);
         jPanel.add(jLabel3);
         jPanel.add(jLabel4);
@@ -45,7 +46,8 @@ public class Ventana1 extends JFrame{
         jLabel3.setText("Hola3");
         jLabel4.setText("Hola4");
         button.setText("Saludar");
-    
+        btn2.setText("Saludar2");
+        btn3.setText("saludar3");
         
         btn3.addActionListener(new ActionListener() {
             @Override
